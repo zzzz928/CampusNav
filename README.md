@@ -48,6 +48,14 @@
 | **数据存储** | 文本文件 (TXT) |
 
 ---
+CampusNav/
+├── admin.cpp/h       # 管理员功能
+├── file.cpp/h        # 数据读写
+├── graph.cpp/h       # 图算法核心
+├── mainwindow.cpp/h  # 主界面
+├── mapwidget.cpp/h   # 地图绘制
+└── data/             # 景点与距离数据
+
 效果展示：
 主界面
 <img width="2878" height="1464" alt="image" src="https://github.com/user-attachments/assets/538cfe6d-fc7d-440c-a738-40e8e063fc88" />
