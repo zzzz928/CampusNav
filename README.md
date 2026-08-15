@@ -56,6 +56,26 @@ CampusNav/
 ├── mapwidget.cpp/h   # 地图绘制
 └── data/             # 景点与距离数据
 
+---
+
+## 📁 数据文件格式说明
+
+### spots.txt — 景点数据
+
+每行一个景点，字段之间用 `|` 分隔：
+id|名称|简介|类型位标记|x坐标|y坐标
+
+
+---
+
+### distance.txt — 邻接矩阵
+
+存储景点之间的道路距离，是一个 `n × n` 的矩阵（`n` = 景点数量），数字之间用**空格**分隔：
+
+- `0` — 自身到自身的距离
+- `正整数` — 两个景点之间的道路距离（单位：米）
+- `9999` — 两个景点之间不连通（即 INF）
+
 效果展示：
 主界面
 <img width="2878" height="1464" alt="image" src="https://github.com/user-attachments/assets/538cfe6d-fc7d-440c-a738-40e8e063fc88" />
